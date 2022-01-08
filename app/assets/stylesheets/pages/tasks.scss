@@ -68,7 +68,7 @@ body {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: #a3a3a3;
-  };
+  }
 
   .action-icons {
     width: 40px;
@@ -81,7 +81,11 @@ body {
   }
 
   i {
-      color:#a3a3a3;
+      color:#FE6726;
+  }
+
+  i:hover {
+    color: #ce5421;
   }
 }
 
@@ -105,6 +109,6 @@ body {
   }
 
   .btn-new-task:hover {
-      background-color: #ce5421;
+    background-color: #ce5421;
   }
 }
