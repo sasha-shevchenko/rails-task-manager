@@ -22,7 +22,7 @@ To be inserted.
 Clone this repository to your local machine:
 
 ```
-$ git clone (to be inserted)
+$ git clone https://github.com/sasha-shevchenko/task-manager
 ```
 
 Install all application dependancies:
