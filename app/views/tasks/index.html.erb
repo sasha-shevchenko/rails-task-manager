@@ -1,24 +1,31 @@
-
-<div class="tasks-overview">
-
+<div class="overview-page">
+  <div class="background-card"></div>
   <div class="tasks-overview-container">
-    <h1 class="main-header">Tasks to be completed:</h1>
+    <h1 class="container-header">To Be Completed:</h1>
     <ul class="task-list">
       <% @tasks.each do |task| %>
         <li class="task-container">
-          <p class="task-title"><%=link_to task.title, task_path(task)%></p>
-          <div class="icons">
+          <div class="centered">
+            <%if task.completed == true%>
+              <i class="fas fa-circle fa-2x"></i>
+            <%else%>
+            <i class="far fa-circle fa-2x"></i>
+            <%end%>
+          </div>
+          <%=link_to task.title, task_path(task), class: "task-title centered"%>
+          <div class="action-icons centered">
             <%=link_to delete_task_path(task), method: :delete, data: { confirm: "Are you sure?" } do %>
-            <i class="fas fa-trash-alt"></i>
+              <i class="fas fa-trash-alt"></i>
             <%end%>
             <%=link_to edit_task_path(task), method: :edit do %>
-            <i class="fas fa-edit"></i>
+              <i class="fas fa-edit"></i>
+            <%end%>
           </div>
-          <%end%>
         </li>
       <% end %>
     </ul>
 
-    <%= link_to "add a task", new_task_path %>
+    <%= button_to "Add New Task", new_task_path, {method: "get", class: 'btn-new-task' }%>
+
   </div>
 </div>
