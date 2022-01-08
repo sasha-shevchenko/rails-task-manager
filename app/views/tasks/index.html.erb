@@ -1,19 +1,24 @@
-<div class="tasks-dashboard-container">
-  <h1>Tasks#display</h1>
-  <p>Find me in app/views/tasks/display.html.erb</p>
 
-  <% @tasks.each do |task| %>
-    <ul>
-      <li><%=link_to task.title, task_path(task)%>
-          <%=link_to delete_task_path(task), method: :delete, data: { confirm: "Are you sure?" } do %>
-          <i class="fas fa-trash-alt"></i>
+<div class="tasks-overview">
+
+  <div class="tasks-overview-container">
+    <h1 class="main-header">Tasks to be completed:</h1>
+    <ul class="task-list">
+      <% @tasks.each do |task| %>
+        <li class="task-container">
+          <p class="task-title"><%=link_to task.title, task_path(task)%></p>
+          <div class="icons">
+            <%=link_to delete_task_path(task), method: :delete, data: { confirm: "Are you sure?" } do %>
+            <i class="fas fa-trash-alt"></i>
+            <%end%>
+            <%=link_to edit_task_path(task), method: :edit do %>
+            <i class="fas fa-edit"></i>
+          </div>
           <%end%>
-          <%=link_to edit_task_path(task), method: :edit do %>
-          <i class="fas fa-edit"></i>
-          <%end%>
-      </li>
+        </li>
+      <% end %>
     </ul>
-  <% end %>
 
-  <%= link_to "add a task", new_task_path %>
+    <%= link_to "add a task", new_task_path %>
+  </div>
 </div>
