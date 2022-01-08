@@ -17,7 +17,7 @@
             <%=link_to delete_task_path(task), method: :delete, data: { confirm: "Are you sure?" } do %>
               <i class="fas fa-trash-alt"></i>
             <%end%>
-            <%=link_to edit_task_path(task), method: :edit do %>
+            <%=link_to edit_task_path(task), method: "get" do %>
               <i class="fas fa-edit"></i>
             <%end%>
           </div>
