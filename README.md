@@ -1,24 +1,46 @@
-# README
+# Task Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application for simple task managment developed in Ruby on Rails.
 
-Things you may want to cover:
 
-* Ruby version
+## Functionalities
 
-* System dependencies
+- As a user, I can add a task to the overview.
+- As a user, I can see all added tasks in the overview.
+- As a user, I can view more information about a specific task.
+- As a user, I can mark a task completed.
+- As a user, I can edit the informattion of a specific task.
 
-* Configuration
 
-* Database creation
+## Application screenshots
 
-* Database initialization
+To be inserted.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Configuration
 
-* Deployment instructions
+Clone this repository to your local machine:
 
-* ...
+```
+$ git clone (to be inserted)
+```
+
+Install all application dependancies:
+
+```
+$ bundle install
+```
+
+Create the database and run migrations:
+
+```
+$ rake db:create db:migrate
+```
+
+Start the server:
+
+```
+$ rails server
+```
+
+Lastly, open the application in your browser at <http://localhost:3000/>.
