@@ -2,11 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
 .overview-page {
   width: 100%;
   height: 100vh;
@@ -33,7 +28,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   border-radius: 15px;
 
-  // creates the container overlap
+  // puts container to the front
   position: absolute;
   z-index: 1;
 }
@@ -42,7 +37,6 @@ body {
   color: #FE6726;
   text-align: center;
   margin-left: 20px;
-  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
   padding: 10px;
 }
@@ -66,7 +60,6 @@ body {
   .task-title {
     size: 10px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     color: #a3a3a3;
   }
 

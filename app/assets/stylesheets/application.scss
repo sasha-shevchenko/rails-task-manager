@@ -14,5 +14,17 @@
  *= require_self
  */
 
- // Google fonts
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+
+// Default App CSS styling
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, p, a {
+  font-family: 'Poppins', sans-serif;
+}
