@@ -9,8 +9,7 @@
       <%else%>
         <p>[ ] This task is yet to be completed.</p>
       <%end%>
+      <%= link_to "Go back to task list", tasks_path%>
+      <%= link_to "Edit task", edit_task_path %>
     </div>
 </div>
-
-<%= link_to "Go back to task list", tasks_path%>
-<%= link_to "Edit task", edit_task_path %>
