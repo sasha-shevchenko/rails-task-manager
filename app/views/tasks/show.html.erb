@@ -3,7 +3,6 @@
     <div class="tasks-dashboard">
       <h1 class="dashboard-top">Task: <b><%= @task.title %></b></h1>
 
-      <div class="task-status-container">
         <%if @task.completed == true%>
           <i class="fas fa-circle fa-2x"></i>
           <p> This task is completed!</p>
@@ -11,7 +10,6 @@
           <i class="far fa-circle fa-2x"></i>
           <p>This task is yet to be completed</p>
         <%end%>
-      </div>
 
       <div class="task-description-container">
         <p><%= @task.details %></p>
