@@ -1,0 +1,15 @@
+<div class="overview-page">
+  <div class="background-card"></div>
+  <div class="tasks-dashboard">
+    <h1 class="dashboard-top"> Create a New Task</h1>
+    <div class="dashboard-middle">
+      <%= form_for(@task) do |f| %>
+        <h1 class="form-header">Title:</h1><%= f.text_field :title, class: 'create-task-title' %>
+        <h1 class="form-header">Description:</h1> <%= f.text_field :details, class: 'create-task-description' %><br>
+    </div>
+    <div class="dashboard-bottom">
+        <%= f.submit 'Create Task', class: 'btn-create-task '%>
+        <% end %>
+    </div>
+  </div>
+</div>
