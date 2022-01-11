@@ -8,7 +8,7 @@ Application for simple task managment developed in Ruby on Rails.
 - As a user, I can add a task to the overview.
 - As a user, I can see all added tasks in the overview.
 - As a user, I can view more information about a specific task.
-- As a user, I can mark a task completed.
+- As a user, I can mark/unmark a task completed.
 - As a user, I can edit the informattion of a specific task.
 
 
