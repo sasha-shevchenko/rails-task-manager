@@ -1,31 +1,38 @@
 <div class="overview-page">
   <div class="background-card"></div>
-  <div class="tasks-overview-container">
-    <h1 class="container-header">Task Dashboard:</h1>
-    <ul class="task-list">
-      <% @tasks.each do |task| %>
-        <li class="task-container">
-          <div class="centered">
-            <%if task.completed == true%>
-              <i class="fas fa-circle fa-2x"></i>
-            <%else%>
-            <i class="far fa-circle fa-2x"></i>
-            <%end%>
-          </div>
-          <%=link_to task.title, task_path(task), class: "task-title centered"%>
-          <div class="action-icons centered">
-            <%=link_to delete_task_path(task), method: :delete, data: { confirm: "Are you sure you would like to proceed?" } do %>
-              <i class="fas fa-trash-alt"></i>
-            <%end%>
-            <%=link_to edit_task_path(task), method: "get" do %>
-              <i class="fas fa-edit"></i>
-            <%end%>
-          </div>
-        </li>
-      <% end %>
-    </ul>
 
-    <%= button_to "Add New Task", new_task_path, {method: "get", class: 'btn-new-task' }%>
+  <div class="tasks-dashboard">
+    <h1 class="dashboard-top">Task Dashboard:</h1>
 
+    <div class="dashboard-middle">
+      <ul class="task-list">
+        <% @tasks.each do |task| %>
+          <li class="task-container">
+            <div class="centered">
+              <%if task.completed == true%>
+                <i class="fas fa-circle fa-2x"></i>
+              <%else%>
+              <i class="far fa-circle fa-2x"></i>
+              <%end%>
+            </div>
+            <%=link_to task.title, task_path(task), class: "task-title centered"%>
+            <div class="action-icons centered">
+              <%=link_to delete_task_path(task), method: :delete, data: { confirm: "Are you sure you would like to proceed?" } do %>
+                <i class="fas fa-trash-alt"></i>
+              <%end%>
+              <%=link_to edit_task_path(task), method: "get" do %>
+                <i class="fas fa-edit"></i>
+              <%end%>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="dashboard-bottom">
+      <%= button_to "Add New Task", new_task_path, {method: "get", class: 'btn-new-task' }%>
+    </div>
   </div>
+
+
 </div>
