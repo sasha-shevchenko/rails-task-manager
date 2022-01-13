@@ -3,7 +3,7 @@
     <div class="dashboard-middle">
       <%= form_for(@task) do |f| %>
         <h1 class="form-header">Title:</h1><%= f.text_field :title, class: 'create-task-title' %>
-        <h1 class="form-header">Description:</h1> <%= f.text_field :details, class: 'create-task-description' %><br>
+        <h1 class="form-header">Description:</h1> <%= f.text_area :details, class: 'create-task-description' %><br>
         Completed: <%= f.check_box :completed if Task.exists?(id: task.id) %><br>
     </div>
     <div class="dashboard-bottom">
