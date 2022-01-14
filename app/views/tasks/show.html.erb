@@ -1,22 +1,25 @@
 <div class="overview-page">
-    <div class="background-card"></div>
-    <div class="tasks-dashboard">
-      <h1 class="dashboard-top">Task: <b><%= @task.title %></b></h1>
+  <div class="background-card"></div>
+  <div class="tasks-dashboard">
+    <h1 class="dashboard-top"> Create a New Task</h1>
 
+    <div class="dashboard-middle">
+      <h1 class="form-header">Title:</h1><span class="create-task-title"><%= @task.title %></span>
+      <h1 class="form-header">Description:</h1><span class="create-task-description"><%= @task.details%></span><br>
         <%if @task.completed == true%>
-          <i class="fas fa-circle fa-2x"></i>
-          <p> This task is completed!</p>
-        <%else%>
-          <i class="far fa-circle fa-2x"></i>
-          <p>This task is yet to be completed</p>
-        <%end%>
-
-      <div class="task-description-container">
-        <p><%= @task.details %></p>
-        <%=button_to edit_task_path(@task), {method: "get", class: 'btn-edit-task'} do %>
-          <i class="fas fa-edit fa-lg"></i>
-        <%end%>
-      </div>
+        <i class="fas fa-circle fa-2x"></i>
+        <p> This task is completed!</p>
+      <%else%>
+        <i class="far fa-circle fa-2x"></i>
+        <p>This task is yet to be completed</p>
+      <%end%>
+    </div>
+    <div class="dashboard-bottom">
       <%= link_to "Go back to task list", tasks_path%>
     </div>
+  </div>
 </div>
+
+        <%# <%=button_to edit_task_path(@task), {method: "get", class: 'btn-edit-task'} do %>
+          <%# <i class="fas fa-edit fa-lg"></i> %>
+        <%# <%end%>
