@@ -6,8 +6,8 @@
         <h1 class="form-header">Description:</h1> <%= f.text_area :details, class: 'create-task-description' %><br>
         <%# Completed: <%= f.check_box :completed if Task.exists?(id: task.id) %>
     </div>
-    <div class="dashboard-bottom">
-        <%= f.submit 'Update Task', class: 'btn-create-task '%>
+    <div class="dashboard-bottom d-flex">
+        <%= f.submit 'Update Task', class: 'btn-standard'%>
         <% end %>
     </div>
   </div>
