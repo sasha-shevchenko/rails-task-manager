@@ -64,7 +64,7 @@
   border: solid 1px #f1f1f1;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   padding: 20px 25px;
-  margin: 28px;
+  margin: 27px;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 100px 320px 10px;
@@ -73,7 +73,8 @@
   .task-title {
     size: 10px;
     text-decoration: none;
-    color: #a3a3a3;
+    color: black;
+    opacity: 45%;
   }
 
   .action-icons {
