@@ -10,9 +10,9 @@
           <li class="task-container">
             <div class="centered">
               <%if task.completed == true%>
-                <i class="fas fa-circle fa-2x"></i>
+                <i class="far fa-check-square fa-2x"></i>
               <%else%>
-              <i class="far fa-circle fa-2x"></i>
+              <i class="far fa-square fa-2x"></i>
               <%end%>
             </div>
             <%=link_to task.title, task_path(task), class: "task-title centered"%>

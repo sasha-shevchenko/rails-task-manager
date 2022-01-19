@@ -1,18 +1,20 @@
 <div class="overview-page">
   <div class="background-card"></div>
   <div class="tasks-dashboard">
-    <h1 class="dashboard-top"> Create a New Task</h1>
+    <h1 class="dashboard-top"> Task: <strong><%= @task.title %></strong></h1>
 
     <div class="dashboard-middle">
-      <h1 class="form-header">Title:</h1><span class="create-task-title"><%= @task.title %></span>
-      <h1 class="form-header">Description:</h1><span class="create-task-description"><%= @task.details%></span><br>
+      <div class="task-status">
         <%if @task.completed == true%>
-        <i class="fas fa-circle fa-2x"></i>
-        <p> This task is completed!</p>
-      <%else%>
-        <i class="far fa-circle fa-2x"></i>
-        <p>This task is yet to be completed</p>
-      <%end%>
+          <i class="far fa-check-square fa-2x"></i>
+          <p>This task is completed!</p>
+        <%else%>
+          <i class="far fa-square fa-2x"></i>
+          <p>Click to mark task completed</p>
+        <%end%>
+      </div>
+      <h1 class="form-header">Description:</h1>
+      <div class="task-description"><%= @task.details%></div>
     </div>
     <div class="dashboard-bottom">
       <%= link_to "Go back to task list", tasks_path%>

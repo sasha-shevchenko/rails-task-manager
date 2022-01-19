@@ -1,49 +1,27 @@
-.task-status-container {
+.task-status {
   background-color: white;
-  border: solid 1px #f1f1f1;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  padding: 20px 25px;
-  margin: 30px;
   border-radius: 10px;
+  border: solid 1px #f1f1f1;
+  padding: 10px;
+  margin: 30px 40px;
   display: grid;
-  grid-template-columns: 100px 320px;
-}
-
-.task-description-container {
-  background-color: white;
-  border: solid 1px #f1f1f1;
+  grid-template-columns: 55px 320px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  padding: 20px 25px;
-  margin: 30px;
-  border-radius: 10px;
-  height: 250px;
-}
-
-.button_to {
-  position: relative;
-}
-
-.btn-edit-task {
-  // box-shadow: rgba(0, 0, 0, 1.1) 0px 10px 50px;
-  background-color: #FE6726;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  bottom: -200px;
-  right: 5px;
+  // border: solid 1px #ffa883;
 
   i {
-    color: white;
+    display: flex;
+    align-items: center;
   }
 }
 
-.btn-edit-task:hover {
-    background-color: #ce5421;
-  }
+.task-description {
+  background-color: white;
+  width: 450px;
+  height: 200px;
+  border: solid 1px #f1f1f1;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 8px;
+  margin: 10px 40px 30px 40px;
+}
