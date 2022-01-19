@@ -7,17 +7,17 @@
       <div class="task-status">
         <%if @task.completed == true%>
           <i class="far fa-check-square fa-2x"></i>
-          <p>This task is completed!</p>
+          <p class="status-text">This task is completed!</p>
         <%else%>
           <i class="far fa-square fa-2x"></i>
-          <p>Click to mark task completed</p>
+          <p class="status-text">Click to mark task completed.</p>
         <%end%>
       </div>
       <h1 class="form-header">Description:</h1>
       <div class="task-description"><%= @task.details%></div>
     </div>
     <div class="dashboard-bottom">
-      <%= link_to "Go back to task list", tasks_path%>
+      <%= button_to "Go back to task list", tasks_path, {method: "get", class: 'btn-standard btn-new-task' }%>
     </div>
   </div>
 </div>
