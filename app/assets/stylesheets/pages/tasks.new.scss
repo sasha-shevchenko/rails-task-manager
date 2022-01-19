@@ -1,6 +1,6 @@
 .form-header {
   color: #FE6726;
-  margin: 20px 0px 10px 45px;
+  margin: 15px 0px 10px 45px;
   font-size: 17px;
   font-weight: 500;
 }
@@ -11,8 +11,8 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   height: 20px;
   width: 450px;
-  padding: 8px;
-  margin: 10px 40px 50px 40px;
+  padding: 15px;
+  margin: 5px 40px 30px 40px;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 100px 320px;
@@ -20,11 +20,15 @@
 
 .create-task-description {
   background-color: white;
-  border: solid 1px #f1f1f1;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  padding: 8px;
-  margin: 10px 40px 30px 40px;
-  border-radius: 10px;
   width: 450px;
   height: 200px;
-}
+  border-radius: 10px;
+  border: solid 1px #f1f1f1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  opacity: 80%;
+  padding: 15px;
+  margin: 5px 40px 30px 40px;
+ }
